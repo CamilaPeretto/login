@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login e Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Bloco de Login -->
+        <div class="card">
+          <form id="loginForm">
+            <h2>Entrar</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required />
+            <input type="password" id="loginSenha" placeholder="Senha" required />
+            <button type="submit">Entrar</button>
+            <p class="link">Não tem conta? <span id="mostrarCadastro">Cadastre-se</span></p>
+            <p id="loginMsg" class="msg"></p>
+          </form>
+        </div>
+      
+        <!-- Bloco de Cadastro -->
+        <div class="card hidden" id="cadastroCard">
+          <form id="cadastroForm">
+            <h2>Cadastrar</h2>
+            <input type="text" id="cadastroNome" placeholder="Nome" required />
+            <input type="email" id="cadastroEmail" placeholder="Email" required />
+            <input type="password" id="cadastroSenha" placeholder="Senha" required />
+            <input type="password" id="cadastroConfirmar" placeholder="Confirmar senha" required />
+            <button type="submit">Cadastrar</button>
+            <p class="link">Já tem conta? <span id="esconderCadastro">Voltar</span></p>
+            <p id="cadastroMsg" class="msg"></p>
+          </form>
+        </div>
+      </div>
+      
+  <script src="script.js"></script>
+</body>
+</html>
